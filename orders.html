@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order - College Food Booking System</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="index.html">College Food</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="canteens.html">Canteens</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="order.html">Order</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="wallet.html">Wallet</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Canteen Menu Section -->
+        <section id="menu" class="container">
+            <h2 class="text-center">Choose Your Canteen and Menu</h2>
+            <div class="canteen-selection">
+                <label for="canteen">Select Canteen:</label>
+                <select id="canteen" name="canteen" class="form-control" onchange="updateMenu()">
+                    <option value="">Select Canteen</option>
+                    <option value="canteen1">Canteen 1</option>
+                    <option value="canteen2">Canteen 2</option>
+                    <option value="canteen3">Canteen 3</option>
+                    <!-- Add more canteens as needed -->
+                </select>
+            </div>
+            <div id="menu-items" class="menu-items">
+                <!-- Menu items will be populated here based on canteen selection -->
+            </div>
+        </section>
+
+        <!-- Cart Section -->
+        <section id="cart" class="container">
+            <h2 class="text-center">Your Cart</h2>
+            <div id="cart-items" class="cart-items">
+                <!-- Cart items will be displayed here -->
+            </div>
+            <button id="submit-order" class="btn btn-primary">Submit Order</button>
+        </section>
+
+        <!-- Feedback Form Section -->
+        <section id="feedback" class="container">
+            <h2 class="text-center">We Value Your Feedback</h2>
+            <form action="#" method="post">
+                <div class="form-group">
+                    <label for="feedback-name">Name:</label>
+                    <input type="text" id="feedback-name" name="feedback-name" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label for="feedback-email">Email:</label>
+                    <input type="email" id="feedback-email" name="feedback-email" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label for="feedback-comments">Comments:</label>
+                    <textarea id="feedback-comments" name="feedback-comments" class="form-control" rows="5"></textarea>
+                </div>
+                <button type="submit" class="btn btn-secondary">Submit Feedback</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 College Food Booking System. All rights reserved.</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="js/scripts.js"></script>
+</body>
+</html>

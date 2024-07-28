@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wallet - College Food Booking System</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="index.html">College Food</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="canteens.html">Canteens</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="order.html">Order</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="wallet.html">Wallet</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Add to Wallet Section -->
+        <section id="add-to-wallet" class="container">
+            <h2 class="text-center">Add Funds to Your Wallet</h2>
+            <form action="#" method="post">
+                <div class="form-group">
+                    <label for="amount">Amount to Add:</label>
+                    <input type="number" id="amount" name="amount" class="form-control" min="1" required>
+                </div>
+                <button type="submit" class="btn btn-primary">Add to Wallet</button>
+            </form>
+        </section>
+
+        <!-- Why Wallet is Necessary Section -->
+        <section id="why-wallet" class="container">
+            <h2 class="text-center">Why is Having a Wallet Important?</h2>
+            <p>Having a wallet simplifies your food ordering process by allowing you to pre-load funds, which eliminates the need for on-the-spot payments and speeds up the checkout process.</p>
+            <ul>
+                <li><i class="fas fa-check-circle"></i> Convenient and Fast Transactions</li>
+                <li><i class="fas fa-check-circle"></i> No Need to Carry Cash</li>
+                <li><i class="fas fa-check-circle"></i> Easily Track Your Spending</li>
+                <li><i class="fas fa-check-circle"></i> Avoids Transaction Failures</li>
+            </ul>
+        </section>
+
+        <!-- How to Add Funds Section -->
+        <section id="how-to-add" class="container">
+            <h2 class="text-center">How to Add Funds to Your Wallet</h2>
+            <div class="step">
+                <h3>Step 1: Log In</h3>
+                <p>Ensure you are logged in to your account.</p>
+                <img src="images/step1.jpg" alt="Step 1: Log In">
+            </div>
+            <div class="step">
+                <h3>Step 2: Navigate to Wallet</h3>
+                <p>Go to the Wallet section from the navigation menu.</p>
+                <img src="images/step2.jpg" alt="Step 2: Navigate to Wallet">
+            </div>
+            <div class="step">
+                <h3>Step 3: Enter Amount</h3>
+                <p>Specify the amount you wish to add to your wallet and click 'Add to Wallet'.</p>
+                <img src="images/step3.jpg" alt="Step 3: Enter Amount">
+            </div>
+            <div class="step">
+                <h3>Step 4: Confirm</h3>
+                <p>Confirm the transaction to complete the process.</p>
+                <img src="images/step4.jpg" alt="Step 4: Confirm">
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 College Food Booking System. All rights reserved.</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
